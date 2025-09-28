@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculNotes.Calcul_note_de_session_normale"
+             Title="Session normale">
+    <ScrollView>
+    <StackLayout Padding="20" Orientation="Vertical">
+            <StackLayout Margin="0" HorizontalOptions="Center">
+                <Frame CornerRadius="10" BackgroundColor="#b0e9ef" Padding="5">
+                 <Label Text="Calcul de la note de session normale nécessaire" HorizontalTextAlignment="Center" Margin="10" TextColor="#08707B" FontSize="Large" FontFamily="Helvetica" FontAttributes="Bold" BackgroundColor="#b0e9ef" Padding="0"/>
+                </Frame>
+            </StackLayout>
+
+            <ScrollView>
+                <ContentView Padding="0,20,0,10">
+                    <Label Text="Vous désirez connaître la note de session normale nécessaire basée sur une note de contrôle continu et une note finale souhaitée ?&#10;&#10;Remplissez les champs ci-dessous :" HorizontalTextAlignment="Center"  Margin="0,5,0,5" FontFamily="Helvetica" LineBreakMode="WordWrap" MaxLines="10"/>
+                </ContentView>
+            </ScrollView>
+
+            <!-- Entry avec effet de placeholder flottant pour la note CC -->
+            <Entry Placeholder="Entrer la note contrôle continu (min: 0, max: 20)" x:Name="noteCCEntry" Margin="0,0,0,10" FontFamily="Helvetica" Keyboard="Numeric"/>
+
+        <!-- Entry avec effet de placeholder flottant pour la note NF -->
+            <Entry Placeholder="Entrer la note finale souhaitée (min: 0, max: 20)" x:Name="noteNFEntry" FontFamily="Helvetica" Keyboard="Numeric" />
+
+        <Button Text="Calculer" Clicked="OnCalculerClicked" Margin="20" FontAttributes="Bold"/>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
