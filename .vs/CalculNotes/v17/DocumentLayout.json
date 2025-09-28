@@ -1,0 +1,95 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\siewe\\source\\repos\\CalculNotes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD5FF24F-1A40-4E8A-A32C-E374755045AF}|CalculNotes\\CalculNotes.csproj|c:\\users\\siewe\\source\\repos\\calculnotes\\calculnotes\\calculnotes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CD5FF24F-1A40-4E8A-A32C-E374755045AF}|CalculNotes\\CalculNotes.csproj|solutionrelative:calculnotes\\calculnotes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD5FF24F-1A40-4E8A-A32C-E374755045AF}|CalculNotes\\CalculNotes.csproj|c:\\users\\siewe\\source\\repos\\calculnotes\\calculnotes\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD5FF24F-1A40-4E8A-A32C-E374755045AF}|CalculNotes\\CalculNotes.csproj|solutionrelative:calculnotes\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD5FF24F-1A40-4E8A-A32C-E374755045AF}|CalculNotes\\CalculNotes.csproj|c:\\users\\siewe\\source\\repos\\calculnotes\\calculnotes\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{CD5FF24F-1A40-4E8A-A32C-E374755045AF}|CalculNotes\\CalculNotes.csproj|solutionrelative:calculnotes\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD5FF24F-1A40-4E8A-A32C-E374755045AF}|CalculNotes\\CalculNotes.csproj|c:\\users\\siewe\\source\\repos\\calculnotes\\calculnotes\\platforms\\tizen\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD5FF24F-1A40-4E8A-A32C-E374755045AF}|CalculNotes\\CalculNotes.csproj|solutionrelative:calculnotes\\platforms\\tizen\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 291,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 109,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\siewe\\source\\repos\\CalculNotes\\CalculNotes\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "CalculNotes\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\siewe\\source\\repos\\CalculNotes\\CalculNotes\\MainPage.xaml.cs",
+              "RelativeToolTip": "CalculNotes\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAAA4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T11:42:28.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalculNotes.csproj",
+              "DocumentMoniker": "C:\\Users\\siewe\\source\\repos\\CalculNotes\\CalculNotes\\CalculNotes.csproj",
+              "RelativeDocumentMoniker": "CalculNotes\\CalculNotes.csproj",
+              "ToolTip": "C:\\Users\\siewe\\source\\repos\\CalculNotes\\CalculNotes\\CalculNotes.csproj",
+              "RelativeToolTip": "CalculNotes\\CalculNotes.csproj",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAEYAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-10T11:23:30.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\siewe\\source\\repos\\CalculNotes\\CalculNotes\\MainPage.xaml",
+              "RelativeDocumentMoniker": "CalculNotes\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\siewe\\source\\repos\\CalculNotes\\CalculNotes\\MainPage.xaml",
+              "RelativeToolTip": "CalculNotes\\MainPage.xaml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAACrAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-10T10:57:10.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\siewe\\source\\repos\\CalculNotes\\CalculNotes\\Platforms\\Tizen\\Main.cs",
+              "RelativeDocumentMoniker": "CalculNotes\\Platforms\\Tizen\\Main.cs",
+              "ToolTip": "C:\\Users\\siewe\\source\\repos\\CalculNotes\\CalculNotes\\Platforms\\Tizen\\Main.cs",
+              "RelativeToolTip": "CalculNotes\\Platforms\\Tizen\\Main.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T22:13:06.815Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

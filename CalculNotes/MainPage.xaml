@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalculNotes.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="20" Orientation="Vertical">
+            <StackLayout Margin="0" HorizontalOptions="Center">
+                <Frame CornerRadius="10" BackgroundColor="#b0e9ef" Padding="5">
+                <Label Text="Calcul de la moyenne" FontSize="Large" HorizontalTextAlignment="Center" Margin="10" TextColor="#08707B" FontAttributes="Bold" BackgroundColor="#b0e9ef" FontFamily="Helvetica" Padding="0"/>
+                </Frame>
+            </StackLayout>
+
+            <ScrollView>
+                <ContentView Padding="0,20,0,10">
+                    <Label Text="Besoin de calculer votre moyenne?&#10;Remplissez les champs ci-dessous matière par matière :" HorizontalTextAlignment="Center"  Margin="0,5,0,5" FontFamily="Helvetica" LineBreakMode="WordWrap" MaxLines="10"/>
+                </ContentView>
+            </ScrollView>
+
+            <Entry Placeholder="Nom de la matière" x:Name="nomEntry" Margin="0" FontFamily="Helvetica" Keyboard="Text"/>
+            <Entry Placeholder="Note" x:Name="noteEntry" Margin="0" FontFamily="Helvetica" Keyboard="Numeric"/>
+            <Entry Placeholder="Crédit(coéfficient)" x:Name="creditEntry" Margin="0" FontFamily="Helvetica" Keyboard="Numeric"/>
+
+            <StackLayout Orientation="Horizontal" x:Name="updateSection" HorizontalOptions="FillAndExpand">
+                <Button x:Name="addButton" Text="Ajouter" Clicked="OnAjouterClicked" Margin="0,20,0,20" HorizontalOptions="FillAndExpand" FontAttributes="Bold" WidthRequest="75" FontSize="10" FontFamily="Helvetica"/>
+                <Button x:Name="updateButton" Text="Modifier" Clicked="OnModifierClicked" Margin="0,20,0,20" HorizontalOptions="FillAndExpand" FontAttributes="Bold" WidthRequest="75" FontSize="10" FontFamily="Helvetica"/>
+                <Button x:Name="deleteButton" Text="Supprimer" Clicked="OnSupprimerClicked" Margin="0,20,0,20" HorizontalOptions="FillAndExpand" FontAttributes="Bold" WidthRequest="80" FontSize="10" FontFamily="Helvetica" />
+                <Button x:Name="cleanButton" Text="Vider" Clicked="OnViderClicked" Margin="0,20,0,20" HorizontalOptions="FillAndExpand" FontAttributes="Bold" WidthRequest="75" FontSize="10" FontFamily="Helvetica" />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal" Margin="0,10,0,0" BackgroundColor="AliceBlue">
+                <Label Text="Nom" HorizontalOptions="StartAndExpand" FontAttributes="Bold" FontFamily="Helvetica" Padding="5"/>
+                <Label Text="Note" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontFamily="Helvetica" Padding="5"/>
+                <Label Text="Crédit" HorizontalOptions="EndAndExpand" FontAttributes="Bold" FontFamily="Helvetica" Padding="5"/>
+            </StackLayout>
+            <Border BackgroundColor="Gray" HeightRequest="2" Margin="0,0,0,0" />
+
+            <ListView x:Name="matiereListView" Margin="0,10,0,0" HasUnevenRows="True" VerticalOptions="FillAndExpand" BackgroundColor="#08707B" ItemTapped="OnMatiereItemTapped" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding Nom}" HorizontalOptions="StartAndExpand" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Padding="5" />
+                                <Label Text="{Binding Note}" HorizontalOptions="CenterAndExpand" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Padding="5"/>
+                                <Label Text="{Binding Credit}" HorizontalOptions="EndAndExpand" TextColor="White" FontAttributes="Bold" FontFamily="Helvetica" Padding="5"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            <Button Text="Calculer la moyenne" 
+                    x:Name="moyenneLabel" 
+                    FontSize="Large" 
+                    HorizontalOptions="Center" 
+                    Margin="0,20,0,0" 
+                    BackgroundColor="#08707B" 
+                    TextColor="White" 
+                    Padding="15" 
+                    FontAttributes="Bold" 
+                    CornerRadius="20"
+                    Clicked="CalculClicked"
+                    FontFamily="Helvetica">
+                <Button.Shadow>
+                    <Shadow Brush="Aquamarine"
+                     Offset="10,10"
+                     Radius="10"
+                     Opacity="1" />
+                </Button.Shadow>
+            </Button>
+
+            <Label x:Name="idEntry" Text="" IsVisible="False" FontFamily="Helvetica"/>
+            
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>

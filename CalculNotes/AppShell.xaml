@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="CalculNotes.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:CalculNotes"
+    Shell.FlyoutBehavior="Flyout"
+    BackgroundColor="#08707B"
+    Title="CalculNotes"
+    TitleColor="White"
+    FlyoutBackgroundColor="AliceBlue"
+    Shell.TabBarIsVisible="False"
+    Padding="5">
+  
+ 
+    
+
+    <Shell.FlyoutHeader>
+        <Border BackgroundColor="#08707B"
+                StrokeThickness="0">
+             <Grid ColumnDefinitions="Auto,*" Padding="25" ColumnSpacing="25">
+                <Image Grid.Column="0"
+                        Source="note.png"
+                        Aspect="AspectFill"
+                        HeightRequest="50"
+                        WidthRequest="50"/>
+                <Label Grid.Column="1"
+                        Text="Application de calcul de notes"
+                        VerticalTextAlignment="Center"
+                        FontSize="23"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        FontFamily="Helvetica"/>
+
+            </Grid>
+        </Border>
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <Label 
+                        Text="©Copyright 2024 | Alix Siewe "
+                        HorizontalTextAlignment="Center"
+                        Padding="0,10"
+                        TextColor="White"
+                        BackgroundColor="#08707B"
+                        FontFamily="Helvetica"/>
+
+ 
+    </Shell.FlyoutFooter>
+
+
+    <!-- Définissez le contenu principal -->
+    <FlyoutItem Title="Utilisateurs" FlyoutDisplayOptions="AsMultipleItems" >
+
+        <ShellContent
+        Title="Accueil"
+        Icon="moyenne.png"
+        ContentTemplate="{DataTemplate local:MainPage}" />
+
+        <ShellContent
+        Title="Contrôle"
+        Icon="note_cc.png"
+        ContentTemplate="{DataTemplate local:Calcul_note_de_contrôle_continu}" />
+
+        <ShellContent
+        Title="Session"
+        Icon="note_session.png"
+        ContentTemplate="{DataTemplate local:Calcul_note_de_session_normale}" />
+
+        <ShellContent
+        Title="Finale"
+        Icon="note_finale.png"
+        ContentTemplate="{DataTemplate local:Calcul_note_finale}" />
+
+    </FlyoutItem>
+
+</Shell>

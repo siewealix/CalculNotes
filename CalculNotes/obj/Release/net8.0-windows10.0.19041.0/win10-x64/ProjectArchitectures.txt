@@ -1,0 +1,1 @@
+C:\Users\siewe\source\repos\CalculNotes\CalculNotes\CalculNotes.csproj;x64
