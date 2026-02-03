@@ -52,6 +52,4 @@ dotnet build -t:Run -f net8.0-windows10.0.19041.0
 - Projet MAUI mono-solution : `CalculNotes.sln`.
 - Le fichier `CalculNotes.csproj` contient les cibles et dépendances MAUI.
 
----
 
-Si vous souhaitez ajouter des règles de calcul spécifiques (pondérations, coefficients, etc.), elles peuvent être centralisées dans les pages XAML/C# associées pour garder le comportement lisible et facile à ajuster.
